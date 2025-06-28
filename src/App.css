@@ -1,0 +1,102 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms ease, transform 0.3s ease;
+  will-change: filter, transform;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 123, 255, 0.5));
+  transform: scale(1.05);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 12px rgba(97, 218, 251, 0.5));
+}
+
+/* Logo rotation if animation is allowed */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.animate-spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card style (could be reused) */
+.card {
+  padding: 2em;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Small text note */
+.read-the-docs {
+  color: #777;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
